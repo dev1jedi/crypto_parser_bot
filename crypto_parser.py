@@ -18,27 +18,6 @@ async def main(message: types.Message):
     await message.answer(
         "Приветствую! Этот бот будет информировать вас о текущей цене трех основных криптовалют - bitcoin, ethereum, monero. Настройте его: ", reply_markup=config)
 
-    # data = {
-    #     "all_coins": [
-    #         {
-    #             "crypto": "BTC",
-    #             "last_price": "0"
-    #         },
-    #         {
-    #             "crypto": "ETH",
-    #             "last_price": "0"
-    #         },
-    #         {
-    #             "crypto": "XMR",
-    #             "last_price": "0"
-    #         }
-    #     ]
-    # }
-    #
-    # with open("last_price.json", "w") as out:
-    #     json.dump(data, out)
-
-
     handler.register_handlers(dp)
 
 
